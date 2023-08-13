@@ -13,5 +13,6 @@ ${AnsiColor.BLUE}
 ${AnsiColor.DEFAULT}
 ${AnsiColor.GREEN}Application Name:${AnsiColor.MAGENTA} ${info.app.name}
 ${AnsiColor.GREEN}Application Version: ${AnsiColor.MAGENTA} ${info.app.version}
+${AnsiColor.GREEN}Application Description: ${AnsiColor.MAGENTA} ${info.app.description}
 ${AnsiColor.RED} :: Spring Boot${spring-boot.formatted-version} :: ${AnsiColor.RED}
 ${AnsiColor.DEFAULT}
