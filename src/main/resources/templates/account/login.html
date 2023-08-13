@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+  layout:decorate="~{shared/_layout.html}"
+>
+  <head>
+    <title layout:fragment="title" th:text="''+${title}"></title>
+  </head>
+  <body>
+    <div layout:fragment="content" class="container__centered">
+      <form action="Post" class="form-login">
+        <label for="email" class="form-login__label">Email: </label>
+        <input type="email" class="form-login__email" name="email" id="email" />
+        <label for="password" class="form-login__label">Password: </label>
+        <input
+          type="text"
+          class="form-login__password"
+          name="password"
+          id="password"
+        />
+        <input type="submit" class="form-login__sumbit" value="Login" />
+      </form>
+    </div>
+  </body>
+</html>

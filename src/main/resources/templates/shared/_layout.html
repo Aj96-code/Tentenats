@@ -4,22 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" th:href="@{/css/styles.css}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title layout:title-pattern="$LAYOUT_TITLE | $CONTENT_TITLE">
       Tentenants
     </title>
   </head>
   <body>
     <section class="header">
-      <div class="navbar">Navbar</div>
+      <div class="main-nav container__centered">
+        <div>
+          <a href="/" class="main-nav__brand">Tentenants</a>
+        </div>
+        <ul class="main-nav__links">
+          <li class="main-nav__link"><a href="#">Link</a></li>
+          <li class="main-nav__link"><a href="#">Link</a></li>
+          <li class="main-nav__link"><a href="#">Link</a></li>
+          <li class="main-nav__link">
+            <a th:href="@{account/login}">Login</a>
+          </li>
+        </ul>
+      </div>
     </section>
     <div layout:fragment="content"></div>
     <section class="footer">
       <div class="main-footer">
-        <ul class="footer__links">
-          <li class="footer__link">Footer link</li>
-          <li class="footer__link"></li>
-          <li class="footer__link"></li>
-          <li class="footer__link"></li>
+        <ul class="main-footer__links">
+          <li class="main-footer__link"><a href="#">Footer link</a></li>
+          <li class="main-footer__link"><a href="#">Footer link</a></li>
+          <li class="main-footer__link"><a href="#">Footer link</a></li>
+          <li class="main-footer__link"><a href="#">Footer link</a></li>
         </ul>
       </div>
     </section>
