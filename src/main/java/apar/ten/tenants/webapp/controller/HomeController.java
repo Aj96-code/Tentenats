@@ -9,6 +9,6 @@ public class HomeController {
  @GetMapping("/")
  public String home(Model thModel){
   thModel.addAttribute("title", "Home Page");
-  return "index";
+  return "home/index";
  } 
 }
