@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" th:href="@{/css/styles.css}" />
+    <title layout:fragment="title"></title>
+  </head>
+  <body>
+    <section class="header">
+      <div class="navbar">Navbar</div>
+    </section>
+    <div layout:fragment="content"></div>
+    <section class="footer">
+      <div class="main-footer">
+        <ul class="footer__links">
+          <li class="footer__link">Footer link</li>
+          <li class="footer__link"></li>
+          <li class="footer__link"></li>
+          <li class="footer__link"></li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
